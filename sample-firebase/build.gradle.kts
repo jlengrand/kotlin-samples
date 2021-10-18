@@ -19,10 +19,13 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jetbrains.kotlinx:kotlinx-html:0.7.2")
+    implementation(npm("firebase", "9.1.3"))
+    implementation(npm("is-sorted", "1.0.5"))
+
 }
 
 kotlin {
-    js(IR) {
+    js(LEGACY) {
         binaries.executable()
         browser {
             commonWebpackConfig {
