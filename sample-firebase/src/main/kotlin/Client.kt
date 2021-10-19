@@ -24,17 +24,11 @@ external fun <T> sorted(a: Array<T>): Boolean
 fun main() {
 //    startFirebase()
     window.onload = {
+        val firebaseConfig: Json = json()
+        val fire = initializeApp(firebaseConfig)
+        console.log(fire)
         console.log(sorted(arrayOf(1, 2, 3)))
-        startFirebase();
         document.body?.sayHello() }
-}
-
-fun startFirebase(){
-    val firebaseConfig: Json = json(
-    )
-
-    val fire = initializeApp(firebaseConfig)
-    console.log(fire)
 }
 
 fun Node.sayHello() {
