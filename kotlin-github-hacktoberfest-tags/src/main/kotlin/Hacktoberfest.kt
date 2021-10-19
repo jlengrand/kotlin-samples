@@ -7,8 +7,8 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 suspend fun main(){
-    val user = "adyen-examples"
-    val repoType = RepoType.orgs
+    val user = "jlengrand"
+    val repoType = RepoType.users
 
     val repositories = getRepos(user, repoType)
     repositories.forEach { applyTag(it.fullName) }
