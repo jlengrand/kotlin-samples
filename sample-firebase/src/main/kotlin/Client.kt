@@ -31,14 +31,6 @@ fun main() {
 
 fun startFirebase(){
     val firebaseConfig: Json = json(
-        "apiKey" to "AIzaSyD8uQHyfWh2HBdppW-SiVG-clhRiXTRJcM",
-        "authDomain" to "kanawish-blog-samples.firebaseapp.com",
-        "databaseURL" to "https://kanawish-blog-samples-default-rtdb.firebaseio.com",
-        "projectId" to "kanawish-blog-samples",
-        "storageBucket" to "kanawish-blog-samples.appspot.com",
-        "messagingSenderId" to "872035858041",
-        "appId" to "1:872035858041:web:38673c69d5f931261f06a8",
-        "measurementId" to "G-625CTE2C2L"
     )
 
     val fire = initializeApp(firebaseConfig)
