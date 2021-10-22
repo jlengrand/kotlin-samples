@@ -14,4 +14,15 @@ import org.w3c.performance.*
 import org.w3c.workers.*
 import org.w3c.xhr.*
 
-typealias CustomEventName<T> = Any
+external interface LogOptions {
+    var level: String /* "debug" | "verbose" | "info" | "warn" | "error" | "silent" */
+}
+
+typealias LogCallback = (callbackParams: LogCallbackParams) -> Unit
+
+external interface LogCallbackParams {
+    var level: String /* "debug" | "verbose" | "info" | "warn" | "error" | "silent" */
+    var message: String
+    var args: Array<Any>
+    var type: String
+}
