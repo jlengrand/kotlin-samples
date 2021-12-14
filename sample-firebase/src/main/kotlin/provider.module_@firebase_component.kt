@@ -15,21 +15,21 @@ import org.w3c.workers.*
 import org.w3c.xhr.*
 import tsstdlib.Record
 
-external interface `T$0` {
-    var identifier: String?
-        get() = definedExternally
-        set(value) = definedExternally
-    var optional: Boolean
-}
-
-external interface `T$1` {
-    var identifier: String?
-        get() = definedExternally
-        set(value) = definedExternally
-    var optional: Boolean?
-        get() = definedExternally
-        set(value) = definedExternally
-}
+//external interface `T$0` {
+//    var identifier: String?
+//        get() = definedExternally
+//        set(value) = definedExternally
+//    var optional: Boolean
+//}
+//
+//external interface `T$1` {
+//    var identifier: String?
+//        get() = definedExternally
+//        set(value) = definedExternally
+//    var optional: Boolean?
+//        get() = definedExternally
+//        set(value) = definedExternally
+//}
 
 external open class Provider<T : Nothing?>(name: T, container: ComponentContainer) {
     open var name: Any

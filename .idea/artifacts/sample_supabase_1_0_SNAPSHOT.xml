@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sample-supabase-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/sample-supabase/build/libs</output-path>
+    <root id="archive" name="sample-supabase-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="kotlin-samples.sample-supabase.main" />
+    </root>
+  </artifact>
+</component>

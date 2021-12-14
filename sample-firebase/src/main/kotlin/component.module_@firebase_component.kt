@@ -27,3 +27,5 @@ external open class Component<T : Nothing?>(name: T, instanceFactory: InstanceFa
     open fun setServiceProps(props: Dictionary): Component<T> /* this */
     open fun setInstanceCreatedCallback(callback: onInstanceCreatedCallback<T>): Component<T> /* this */
 }
+
+external open class Component__0 : Component<Nothing?>

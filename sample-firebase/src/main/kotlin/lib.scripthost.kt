@@ -1,4 +1,5 @@
 @file:Suppress("INTERFACE_WITH_SUPERCLASS", "OVERRIDING_FINAL_MEMBER", "RETURN_TYPE_MISMATCH_ON_OVERRIDE", "CONFLICTING_OVERLOADS")
+package tsstdlib
 
 import kotlin.js.*
 import org.khronos.webgl.*
@@ -14,11 +15,6 @@ import org.w3c.performance.*
 import org.w3c.workers.*
 import org.w3c.xhr.*
 
-external open class ComponentContainer(name: String) {
-    open var name: Any
-    open var providers: Any
-    open fun <T : Nothing?> addComponent(component: Component<T>)
-    open fun <T : Nothing?> addOrOverwriteComponent(component: Component<T>)
-    open fun <T : Nothing?> getProvider(name: T): Provider<T>
-    open fun getProviders(): Array<Provider<Nothing?>>
+external open class VarDate {
+    open var VarDate_typekey: VarDate
 }

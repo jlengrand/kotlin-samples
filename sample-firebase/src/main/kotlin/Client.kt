@@ -28,6 +28,7 @@ fun main() {
 //    startFirebase()
     window.onload = {
         val firebaseConfig = object : FirebaseOptions{}
+        console.log(firebaseConfig)
         val fire = initializeApp(firebaseConfig)
         console.log(fire)
         console.log(sorted(arrayOf(1, 2, 3)))
